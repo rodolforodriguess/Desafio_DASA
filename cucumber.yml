@@ -1,0 +1,28 @@
+## YAML Templates
+---
+# execução do scripts visivel (sem headless)
+default: -p pretty -p html -p chrome -p qa -p json
+#default: -p pretty -p html -p firefox -p qa -p json
+
+#execução do scripts sem abrir o browser para rodar em uma esteira de CI (com headless)
+#default: -p pretty -p html -p chrome_headless -p qa -p json
+#default: -p pretty -p html -p firefox_headless -p qa -p json
+
+#Opção progress para não exibir steps dos cenários no console
+#default: -p progress -p html -p chrome_headless -p qa
+#default: -p progress -p html -p firefox_headless -p qa
+
+#Opções a passar no perfil
+progress: --format progress
+pretty: --format pretty
+html: --format html --out=reports/report.html
+qa: AMBIENTE=qa
+chrome: BROWSER=chrome 
+chrome_headless: BROWSER=chrome_headless
+firefox:  BROWSER=firefox
+firefox_headless: BROWSER=firefox_headless
+json: --format json -o reports/report.json
+
+ 
+
+   
