@@ -37,7 +37,7 @@ Quando("clico no link Delboni Auriemo") do
 end
 
 Então("sou direcionado a página do laboratório Delboni") do
-    Metodos_Genericos.trocar_aba
+    Metodos_Genericos.trocar_aba('Delboni Auriemo | Laboratório de Exames e de Imagem')
     expect(page).to have_text 'Resultados de Exames'
     expect(current_url).to eq 'https://delboniauriemo.com.br/'    
 end

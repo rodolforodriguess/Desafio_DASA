@@ -1,5 +1,6 @@
 #language: pt
 
+@nossas_marcas
 Funcionalidade: Nossa marcas
 
 Eu como cliente, quero acessar a homepage da DASA

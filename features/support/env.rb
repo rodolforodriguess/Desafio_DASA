@@ -7,7 +7,6 @@ require 'capybara'
 require "report_builder"
 
 
-
 require_relative 'helper.rb'
 
 World(Helper)
@@ -73,7 +72,7 @@ Capybara.register_driver :selenium do |app|
 end
 
 # Configura o tempo maximo de espera
-Capybara.default_max_wait_time = 10
+Capybara.default_max_wait_time = 30
 
 browser = Capybara.current_session.driver.browser
 #Define se maximiza a tela ou redimensiona conforme o tipo de modo de browser utilizado

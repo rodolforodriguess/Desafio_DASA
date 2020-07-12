@@ -6,8 +6,8 @@ module Metodos_Genericos
         page.execute_script('arguments[0].scrollIntoView(true)', elemento)
     end
 
-    def self.trocar_aba
-        unless page.title.include?('Delboni Auriemo | Laboratório de Exames e de Imagem')
+    def self.trocar_aba(titulo)
+        unless page.title.include?(titulo) 
            sleep 1
         end
         switch_to_window windows.first

@@ -1,8 +1,8 @@
 ## YAML Templates
 ---
 # execução do scripts visivel (sem headless)
-default: -p pretty -p html -p chrome -p qa -p json
-#default: -p pretty -p html -p firefox -p qa -p json
+#default: -p pretty -p html -p chrome -p qa -p json
+default: -p pretty -p html -p firefox -p qa -p json
 
 #execução do scripts sem abrir o browser para rodar em uma esteira de CI (com headless)
 #default: -p pretty -p html -p chrome_headless -p qa -p json
