@@ -35,7 +35,7 @@ at_exit do
     config.report_tabs = %w[Overview Features Scenarios Errors]
     config.report_title = 'Report Builder web automation test results'
     config.compress_images = false
-    config.additional_info = { 'Project name' => 'Desafio Bionexo', 'Browser' => ENV["BROWSER"], 'Ambiente' => ENV["AMBIENTE"] , 'Report generated' => time }
+    config.additional_info = { 'Project name' => 'Desafio DASA', 'Browser' => ENV["BROWSER"], 'Ambiente' => ENV["AMBIENTE"] , 'Report generated' => time }
     end
     ReportBuilder.build_report
 end
